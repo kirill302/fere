@@ -446,6 +446,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
+  cursor: pointer;
   font-family: inherit;
   font-size: 14px;
   display: -webkit-inline-box;
@@ -459,6 +460,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: 1px;
   position: relative;
+}
+
+@media (any-hover: none) {
+  .btn {
+    cursor: default;
+  }
 }
 
 .btn span {
@@ -493,6 +500,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .big-btn {
+  cursor: pointer;
   font-family: inherit;
   font-size: 14px;
   display: -webkit-box;
@@ -506,6 +514,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: 1px;
   position: relative;
+}
+
+@media (any-hover: none) {
+  .big-btn {
+    cursor: default;
+  }
 }
 
 @media (max-width: 1380px) {
@@ -918,6 +932,7 @@ h1, h2, h3, h4, h5, h6 {
             flex-direction: column;
   }
   .header-nav__item {
+    cursor: pointer;
     position: relative;
     display: -ms-grid;
     display: grid;
@@ -929,6 +944,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 15px;
     border-bottom: 1px solid #2C2F37;
   }
+}
+
+@media (max-width: 767.98px) and (any-hover: none) {
+  .header-nav__item {
+    cursor: default;
+  }
+}
+
+@media (max-width: 767.98px) {
   .header-nav__item:last-child {
     border-bottom: none;
   }
@@ -956,7 +980,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header-nav__link {
     font-size: 20px;
+    cursor: pointer;
   }
+}
+
+@media (max-width: 767.98px) and (any-hover: none) {
+  .header-nav__link {
+    cursor: default;
+  }
+}
+
+@media (max-width: 767.98px) {
   .header-nav__sublist {
     opacity: 0;
     z-index: 1;
@@ -977,8 +1011,15 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
   }
   .header-nav__sublink {
+    cursor: pointer;
     display: block;
     padding: 7px 0;
+  }
+}
+
+@media (max-width: 767.98px) and (any-hover: none) {
+  .header-nav__sublink {
+    cursor: default;
   }
 }
 
@@ -996,6 +1037,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-nav__arrow {
+  cursor: pointer;
   -webkit-transition: .1s;
   transition: .1s;
   background: none;
@@ -1003,6 +1045,12 @@ h1, h2, h3, h4, h5, h6 {
           transform: rotate(-90deg);
   font-size: 15px;
   color: inherit;
+}
+
+@media (any-hover: none) {
+  .header-nav__arrow {
+    cursor: default;
+  }
 }
 
 .header-nav__subitem {
@@ -2374,6 +2422,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-nav__item {
+  cursor: pointer;
   font-weight: 500;
   color: #fff;
   -webkit-transition: .1s;
@@ -2381,7 +2430,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+@media (any-hover: none) {
+  .footer-nav__item {
+    cursor: default;
+  }
+}
+
 .footer-nav__arrow {
+  cursor: pointer;
   -webkit-transition: .1s;
   transition: .1s;
   background: none;
@@ -2391,15 +2447,28 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 
+@media (any-hover: none) {
+  .footer-nav__arrow {
+    cursor: default;
+  }
+}
+
 .footer-nav__subitem {
   font-size: 18px;
   color: #fff;
 }
 
 .footer-nav__sublink {
+  cursor: pointer;
   color: inherit;
   -webkit-transition: .1s;
   transition: .1s;
+}
+
+@media (any-hover: none) {
+  .footer-nav__sublink {
+    cursor: default;
+  }
 }
 
 .max-container {
